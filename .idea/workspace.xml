@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2da98a46-eea3-4e7c-8199-4200016158eb" name="Changes" comment="added additional instructions">
-      <change beforePath="$PROJECT_DIR$/EventBriteWebScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventBriteWebScraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventBriteAPICaller.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventBriteAPICaller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventInfoChicago.ndjson" beforeDir="false" afterPath="$PROJECT_DIR$/EventInfoChicago.ndjson" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +14,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ryanshensmacbook &lt;ryanshenpek@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
@@ -84,7 +91,23 @@
       <option name="project" value="LOCAL" />
       <updated>1750614417854</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added additional instructions">
+      <option name="closed" value="true" />
+      <created>1750614885208</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1750614885208</updated>
+    </task>
+    <task id="LOCAL-00005" summary="added additional instructions">
+      <option name="closed" value="true" />
+      <created>1750615064691</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1750615064691</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
