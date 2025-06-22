@@ -1,7 +1,7 @@
 import json
 
 import requests
-TOKEN = 'YEMNVG4IIXVPKVNGU2YS'
+TOKEN = 'YEMNVG4IIXVPKVNGU2YS' # personal token I used on throwaway account - feel free to reuse as needed
 
 with open("eventIDS_chicago.txt", "r") as IDFile:
 
