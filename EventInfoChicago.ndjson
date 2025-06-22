@@ -1,0 +1,64 @@
+{"name":
+  {"text": "Chicago Food Truck Festival, Season 12 \"Summer of the Chicago Style Hotdog\"", "html": "Chicago Food Truck Festival, Season 12 &#34;Summer of the Chicago Style Hotdog&#34;"},
+  "description":
+    {"text": "Season 12, of the Chicago Food Truck Festival is back! This year we celebrate some classic cuisines.", "html": "Season 12, of the Chicago Food Truck Festival is back! This year we celebrate some classic cuisines."},
+  "url": "https://www.eventbrite.com/e/chicago-food-truck-festival-season-12-summer-of-the-chicago-style-hotdog-tickets-1145063478689",
+  "start":
+    {"timezone": "America/Chicago", "local": "2025-06-28T10:00:00", "utc": "2025-06-28T15:00:00Z"},
+  "end":
+    {"timezone": "America/Chicago", "local": "2025-06-29T19:00:00", "utc": "2025-06-30T00:00:00Z"},
+  "organization_id": "94735145263",
+  "created": "2025-01-10T01:34:20Z",
+  "changed": "2025-06-21T13:43:11Z",
+  "published": "2025-01-21T22:05:59Z",
+  "capacity": null,
+  "capacity_is_custom": null,
+  "status": "live",
+  "currency": "USD",
+  "listed": true,
+  "shareable": true,
+  "online_event": false,
+  "tx_time_limit": 1200,
+  "hide_start_date": false,
+  "hide_end_date": false,
+  "locale": "en_US",
+  "is_locked": false,
+  "privacy_setting": "unlocked",
+  "is_series": false,
+  "is_series_parent": false,
+  "inventory_type": "limited",
+  "is_reserved_seating": false,
+  "show_pick_a_seat": false,
+  "show_seatmap_thumbnail": false,
+  "show_colors_in_seatmap_thumbnail": false,
+  "source": "coyote",
+  "is_free": false,
+  "version": null,
+  "summary": "Season 12, of the Chicago Food Truck Festival is back! This year we celebrate some classic cuisines.",
+  "facebook_event_id": null,
+  "logo_id": "932105053",
+  "organizer_id": "6289692797",
+  "venue_id": "249601653",
+  "category_id": "110",
+  "subcategory_id": "10003",
+  "format_id": "5",
+  "id": "1145063478689",
+  "resource_uri": "https://www.eventbriteapi.com/v3/events/1145063478689/",
+  "is_externally_ticketed": false,
+  "logo":
+    {"crop_mask": null,
+      "original":
+        {"url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F932105053%2F94735145263%2F1%2Foriginal.20250110-012900?auto=format%2Ccompress&q=75&sharp=10&s=bbef13fc9b04df894706da2de399f853",
+          "width": 2048,
+          "height": 1536},
+      "id": "932105053",
+      "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F932105053%2F94735145263%2F1%2Foriginal.20250110-012900?crop=focalpoint&fit=crop&h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=f54cb75cb64a10f67798afce9a6e2689",
+      "aspect_ratio": "1.335",
+      "edge_color": "#7d8780",
+      "edge_color_set": true}}
+
+
+{"name": {"text": "The Mustache Crawl Presented by Chicago 20 Something", "html": "The Mustache Crawl Presented by Chicago 20 Something"}, "description": {"text": "Limited Discounted Tickets Available During Our FLASH SALE Going On Now. Chicago's #1 Bar Crawl w/ 25+ Wrigleyville Bars!", "html": "Limited Discounted Tickets Available During Our FLASH SALE Going On Now. Chicago's #1 Bar Crawl w/ 25+ Wrigleyville Bars!"}, "url": "https://www.eventbrite.com/e/the-mustache-crawl-presented-by-chicago-20-something-tickets-1292822630289", "vanity_url": "https://themustachebarcrawl.eventbrite.com", "start": {"timezone": "America/Chicago", "local": "2025-07-26T10:00:00", "utc": "2025-07-26T15:00:00Z"}, "end": {"timezone": "America/Chicago", "local": "2025-07-26T20:00:00", "utc": "2025-07-27T01:00:00Z"}, "organization_id": "325004143503", "created": "2025-03-19T15:57:46Z", "changed": "2025-06-21T20:08:44Z", "published": "2025-03-19T16:37:55Z", "capacity": null, "capacity_is_custom": null, "status": "live", "currency": "USD", "listed": true, "shareable": true, "online_event": false, "tx_time_limit": 480, "hide_start_date": false, "hide_end_date": false, "locale": "en_US", "is_locked": false, "privacy_setting": "unlocked", "is_series": false, "is_series_parent": false, "inventory_type": "limited", "is_reserved_seating": false, "show_pick_a_seat": false, "show_seatmap_thumbnail": false, "show_colors_in_seatmap_thumbnail": false, "source": "coyote", "is_free": false, "version": null, "summary": "Limited Discounted Tickets Available During Our FLASH SALE Going On Now. Chicago's #1 Bar Crawl w/ 25+ Wrigleyville Bars!", "facebook_event_id": null, "logo_id": "1045259433", "organizer_id": "27338423695", "venue_id": "89871579", "category_id": "110", "subcategory_id": "10001", "format_id": "11", "id": "1292822630289", "resource_uri": "https://www.eventbriteapi.com/v3/events/1292822630289/", "is_externally_ticketed": false, "logo": {"crop_mask": null, "original": {"url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1045259433%2F277580722148%2F1%2Foriginal.20250603-222156?auto=format%2Ccompress&q=75&sharp=10&s=ebdf65d57d28eaff685b6a43c1633eca", "width": 2160, "height": 1080}, "id": "1045259433", "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1045259433%2F277580722148%2F1%2Foriginal.20250603-222156?crop=focalpoint&fit=crop&h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=ed6f3e00b0a5c678a3ab4599d46054e9", "aspect_ratio": "2", "edge_color": "#394659", "edge_color_set": true}}
+
+
+{"name": {"text": "Chicago Margarita Festival Season 11, the Urban Oasis", "html": "Chicago Margarita Festival Season 11, the Urban Oasis"}, "description": {"text": "We are back Margarita connoisseurs for Season 11 of the Chicago Margarita Festival.", "html": "We are back Margarita connoisseurs for Season 11 of the Chicago Margarita Festival."}, "url": "https://www.eventbrite.com/e/chicago-margarita-festival-season-11-the-urban-oasis-tickets-1261709339599", "start": {"timezone": "America/Chicago", "local": "2025-06-28T10:00:00", "utc": "2025-06-28T15:00:00Z"}, "end": {"timezone": "America/Chicago", "local": "2025-06-29T19:00:00", "utc": "2025-06-30T00:00:00Z"}, "organization_id": "134056069400", "created": "2025-02-26T22:33:31Z", "changed": "2025-06-21T19:30:31Z", "published": "2025-02-27T03:12:02Z", "capacity": null, "capacity_is_custom": null, "status": "live", "currency": "USD", "listed": true, "shareable": true, "online_event": false, "tx_time_limit": 1200, "hide_start_date": false, "hide_end_date": false, "locale": "en_US", "is_locked": false, "privacy_setting": "unlocked", "is_series": false, "is_series_parent": false, "inventory_type": "limited", "is_reserved_seating": false, "show_pick_a_seat": false, "show_seatmap_thumbnail": false, "show_colors_in_seatmap_thumbnail": false, "source": "coyote", "is_free": false, "version": null, "summary": "We are back Margarita connoisseurs for Season 11 of the Chicago Margarita Festival.", "facebook_event_id": null, "logo_id": "970452483", "organizer_id": "7894556753", "venue_id": "257966733", "category_id": "110", "subcategory_id": "10004", "format_id": "5", "id": "1261709339599", "resource_uri": "https://www.eventbriteapi.com/v3/events/1261709339599/", "is_externally_ticketed": false, "logo": {"crop_mask": null, "original": {"url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F970452483%2F134056069400%2F1%2Foriginal.20250226-223017?auto=format%2Ccompress&q=75&sharp=10&s=bb1c3852605d1120a33d58424e03b7b3", "width": 1242, "height": 1231}, "id": "970452483", "url": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F970452483%2F134056069400%2F1%2Foriginal.20250226-223017?crop=focalpoint&fit=crop&h=200&w=450&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=073301ebb0e8c1ebc8ff17475797551d", "aspect_ratio": "1.005", "edge_color": "#b1aeae", "edge_color_set": true}}
