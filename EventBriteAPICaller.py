@@ -5,6 +5,7 @@ TOKEN = 'YEMNVG4IIXVPKVNGU2YS'
 
 counter=0
 
+#added all mentions of IG/FB socials in titles, descriptions and summary
 
 def scan_socials(s, socials):
 

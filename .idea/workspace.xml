@@ -8,8 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventBriteAPICaller.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventBriteAPICaller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventBriteWebScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventBriteWebScraper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EventInfoChicago.ndjson" beforeDir="false" afterPath="$PROJECT_DIR$/EventInfoChicago.ndjson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eventIDs_chicago.txt" beforeDir="false" afterPath="$PROJECT_DIR$/eventIDs_chicago.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +104,7 @@
       <workItem from="1750616751833" duration="163000" />
       <workItem from="1750617037188" duration="713000" />
       <workItem from="1750979095592" duration="35350000" />
-      <workItem from="1751182613812" duration="759000" />
+      <workItem from="1751182613812" duration="2549000" />
     </task>
     <task id="LOCAL-00001" summary="added additional instructions">
       <option name="closed" value="true" />
