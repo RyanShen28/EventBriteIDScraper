@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da98a46-eea3-4e7c-8199-4200016158eb" name="Changes" comment="added comments">
+    <list default="true" id="2da98a46-eea3-4e7c-8199-4200016158eb" name="Changes" comment="added tiktok support + removed debug tool">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EventBriteAPICaller.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventBriteAPICaller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventBriteWebScraper.py" beforeDir="false" afterPath="$PROJECT_DIR$/EventBriteWebScraper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EventInfoChicago.ndjson" beforeDir="false" afterPath="$PROJECT_DIR$/EventInfoChicago.ndjson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eventIDs_chicago.txt" beforeDir="false" afterPath="$PROJECT_DIR$/eventIDs_chicago.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event_page_text_chicago.ndjson" beforeDir="false" afterPath="$PROJECT_DIR$/event_page_text_chicago.ndjson" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,23 +53,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.EventBriteAPICaller.executor": "Run",
-    "Python.EventBriteIDScraper.executor": "Run",
-    "Python.EventBriteWebScraper.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.EventBriteAPICaller.executor&quot;: &quot;Run&quot;,
+    &quot;Python.EventBriteIDScraper.executor&quot;: &quot;Run&quot;,
+    &quot;Python.EventBriteWebScraper.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="EventBriteIDScraper" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="EventBriteIDScraper" />
@@ -111,7 +115,8 @@
       <workItem from="1750616751833" duration="163000" />
       <workItem from="1750617037188" duration="713000" />
       <workItem from="1750979095592" duration="35350000" />
-      <workItem from="1751182613812" duration="28996000" />
+      <workItem from="1751182613812" duration="32290000" />
+      <workItem from="1751827521335" duration="798000" />
     </task>
     <task id="LOCAL-00001" summary="added additional instructions">
       <option name="closed" value="true" />
@@ -185,7 +190,23 @@
       <option name="project" value="LOCAL" />
       <updated>1751797388654</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added comments">
+      <option name="closed" value="true" />
+      <created>1751797937615</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1751797937615</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added tiktok support + removed debug tool">
+      <option name="closed" value="true" />
+      <created>1751797961398</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1751797961398</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,12 +214,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added additional instructions" />
+    <MESSAGE value="added tiktok support" />
     <MESSAGE value="added comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="added comments" />
+    <MESSAGE value="added tiktok support + removed debug tool" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tiktok support + removed debug tool" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/EventBriteIDScraper$EventBriteIDScraper.coverage" NAME="EventBriteIDScraper Coverage Results" MODIFIED="1751794843637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/EventBriteIDScraper$EventBriteWebScraper.coverage" NAME="EventBriteWebScraper Coverage Results" MODIFIED="1751796930230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/EventBriteIDScraper$EventBriteAPICaller.coverage" NAME="EventBriteAPICaller Coverage Results" MODIFIED="1751153200892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EventBriteIDScraper$EventBriteIDScraper.coverage" NAME="EventBriteIDScraper Coverage Results" MODIFIED="1751827544047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EventBriteIDScraper$EventBriteWebScraper.coverage" NAME="EventBriteWebScraper Coverage Results" MODIFIED="1751827612340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EventBriteIDScraper$EventBriteAPICaller.coverage" NAME="EventBriteAPICaller Coverage Results" MODIFIED="1751831892966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

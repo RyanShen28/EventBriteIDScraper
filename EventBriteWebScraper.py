@@ -2,7 +2,7 @@ import json
 import asyncio
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightException
 
-ConcurrentQueries = 15
+ConcurrentQueries = 10
 eventText = {}
 emptyFlag = False
 #fetch scrapes the IDs from the page
@@ -12,9 +12,9 @@ async def fetch(browser, url, idNo, results):
         full_url = url + str(idNo)
         page = await browser.new_page()
         try:
-            await page.goto(full_url, wait_until="domcontentloaded", timeout = 9000)
+            await page.goto(full_url, wait_until="domcontentloaded", timeout = 12000)
 
-            div = await page.wait_for_selector('div.eds-text--left', timeout = 9000)
+            div = await page.wait_for_selector('div.eds-text--left', timeout = 12000)
 
 
             if div == None:

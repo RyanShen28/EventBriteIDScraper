@@ -81,7 +81,6 @@ def scan_socials(s, socials):
 
     # Pattern for Instagram handles with @
     insta_handle_match = insta_handle_pattern.findall(s)
-    print(len(insta_handle_match))
     if len(insta_handle_match) > 0:
         for i in insta_handle_match:
             socials["insta_handle"].append('@' + i)
@@ -90,7 +89,7 @@ def scan_socials(s, socials):
 with open("event_page_text_chicago.ndjson", "r") as jsonfile:
     text_data = json.load(jsonfile)
 with open("eventIDS_chicago.txt", "r") as IDFile:
-    importantKeys = {"name", "description", "url", "start", "end", "organization", "published", "status", "summary", "facebook_event_id", "organizer_id"}
+    importantKeys = {"name", "description", "url", "start", "end", "organization", "published", "status", "summary", "facebook_event_id", "organizer_id", "id"}
 
     for line in IDFile:
         EVENT_ID = line.strip()
@@ -114,10 +113,13 @@ with open("eventIDS_chicago.txt", "r") as IDFile:
             #filters json to relevant outputs
 
             eventInfo = {k: v for k, v in eventInfo.items() if k in importantKeys}
+
             socials = {"fb_link": [], "insta_link": [], "insta_handle": [], "emails":[], "phone":[], "tiktok":[]}
+            eventTextInfo = text_data.get(str(EVENT_ID))
+            if eventTextInfo is not None:
+                scan_socials(eventTextInfo, socials)
 
 
-            scan_socials(eventInfo[line], socials) #this scrapes the page text, not the API text
             scan_socials(eventInfo["name"]["text"], socials)
             scan_socials(eventInfo['description']['text'], socials)
             scan_socials(eventInfo['summary'], socials)
