@@ -7,3 +7,4 @@ The amount of Event IDs is slightly more than the number of lines in the ndjson,
 
 Run EventBriteIDScraper first, then run WebScraper, then APICaller.
 
+Will optimize into a pipeline later.
