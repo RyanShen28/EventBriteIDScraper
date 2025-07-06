@@ -5,7 +5,8 @@ TOKEN = 'YEMNVG4IIXVPKVNGU2YS'
 
 counter=0
 
-#added all mentions of IG/FB socials in titles, descriptions and summary
+
+
 
 def scan_socials(s, socials):
 
@@ -16,16 +17,17 @@ def scan_socials(s, socials):
 
     phone_pattern = re.compile(
         r'''
+        (?:^|[ \t\n])     # Starting Word boundary
         (?:               # Non-capturing group for optional parts
-          \d{3}           # 123 (no parentheses)
+          \d{3}           # 123 (first 3 digits, no paren) 
           |               # OR
-          \(\d{3}\)      # (123) (with parentheses)
+          \(\d{3}\)      # (123) (with paren)
         )
         [\s-]?           # Optional space or hyphen
-        \d{3}            # 456 (middle 3 digits)
+        \d{3}            # 456 (middle 3)
         [\s-]?           # Optional space or hyphen
-        \d{4}            # 7890 (last 4 digits)
-        \b               # Word boundary (to avoid longer numbers)
+        \d{4}            # 7890 (last 4)
+        \b               # Ending Word boundary (prevents longer numbers)
         ''',
         re.VERBOSE
     )
@@ -42,14 +44,11 @@ def scan_socials(s, socials):
         re.IGNORECASE
     )
     #pattern1 and pattern2 are listed as such bc easier than having to manually delete the space before the @ for search pattern 1
-    insta_handle_pattern1 = re.compile(
-        r"\s|\A@\S+",
+    insta_handle_pattern = re.compile(
+        r"(?:^|[ \t\n])@([a-zA-Z0-9._]+)(?=\W|$)",
         re.IGNORECASE
-    )
-    insta_handle_pattern2 = re.compile(
-        r"\A@\S+",
-        re.IGNORECASE
-    )
+        )
+
 
     phone_matches = phone_pattern.findall(s)
     if(len(phone_matches) > 0):
@@ -76,14 +75,14 @@ def scan_socials(s, socials):
             socials["insta_link"].append(i)
 
     # Pattern for Instagram handles with @
-    insta_handle_match = insta_handle_pattern1.findall(s)
-    insta_handle_match.extend(insta_handle_pattern2.findall(s))
-
+    insta_handle_match = insta_handle_pattern.findall(s)
+    print(len(insta_handle_match))
     if len(insta_handle_match) > 0:
         for i in insta_handle_match:
-            socials["insta_handle"].append('@'+i.split('@', 1)[1])
-
-
+            print(i)
+            socials["insta_handle"].append('@'+i)
+with open("event_page_text_chicago.ndjson", "r") as jsonfile:
+    text_data = json.load(jsonfile)
 with open("eventIDS_chicago.txt", "r") as IDFile:
     importantKeys = {"name", "description", "url", "start", "end", "organization", "published", "status", "summary", "facebook_event_id", "organizer_id"}
 
@@ -109,8 +108,10 @@ with open("eventIDS_chicago.txt", "r") as IDFile:
             #filters json to relevant outputs
 
             eventInfo = {k: v for k, v in eventInfo.items() if k in importantKeys}
-            socials = {"fb_link": [], "insta_link": [], "insta_handle": [], "emails":[]}
+            socials = {"fb_link": [], "insta_link": [], "insta_handle": [], "emails":[], "phone":[]}
 
+
+            scan_socials(eventInfo[line], socials) #this scrapes the page text, not the API text
             scan_socials(eventInfo["name"]["text"], socials)
             scan_socials(eventInfo['description']['text'], socials)
             scan_socials(eventInfo['summary'], socials)
@@ -118,6 +119,7 @@ with open("eventIDS_chicago.txt", "r") as IDFile:
             eventInfo["socials"] = socials
             eventInfo['name'] = eventInfo["name"]["text"]
             eventInfo['description'] = eventInfo["description"]["text"]
+
 
             with open('EventInfoChicago.ndjson', 'a') as jsonfile:
                 jsonfile.write(json.dumps(eventInfo)+"\n")
