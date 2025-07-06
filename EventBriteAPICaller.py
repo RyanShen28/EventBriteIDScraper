@@ -6,15 +6,18 @@ TOKEN = 'YEMNVG4IIXVPKVNGU2YS'
 counter=0
 
 
-
-
 def scan_socials(s, socials):
-
     if s is None:
         return
-    #Social media patterns listed here:
-    #Pattern for Phone
+    # Social media patterns listed here:
+    # Patterns
 
+    tiktok_pattern = re.compile(
+        r'''
+        tiktok.com/@\S+
+        ''',
+        re.VERBOSE
+    )
     phone_pattern = re.compile(
         r'''
         (?:^|[ \t\n])     # Starting Word boundary
@@ -32,7 +35,7 @@ def scan_socials(s, socials):
         re.VERBOSE
     )
     email_pattern = re.compile(
-        r"\S+@\S+",
+        r"\S+(?<!/)@\S+",
         re.IGNORECASE,
     )
     fb_pattern = re.compile(
@@ -43,24 +46,26 @@ def scan_socials(s, socials):
         r'(instagram\.com[^\s]*)',
         re.IGNORECASE
     )
-    #pattern1 and pattern2 are listed as such bc easier than having to manually delete the space before the @ for search pattern 1
+    # pattern1 and pattern2 are listed as such bc easier than having to manually delete the space before the @ for search pattern 1
     insta_handle_pattern = re.compile(
         r"(?:^|[ \t\n])@([a-zA-Z0-9._]+)(?=\W|$)",
         re.IGNORECASE
-        )
+    )
 
-
+    tiktok_matches = tiktok_pattern.findall(s)
+    if (len(tiktok_matches) > 0):
+        for i in tiktok_matches:
+            socials["tiktok"].append(i)
     phone_matches = phone_pattern.findall(s)
-    if(len(phone_matches) > 0):
+    if (len(phone_matches) > 0):
         for i in phone_matches:
             socials["phone"].append(i)
 
-    #Pattern for Emails
+    # Pattern for Emails
     email_match = email_pattern.findall(s)
-    if(len(email_match) > 0):
+    if (len(email_match) > 0):
         for i in email_match:
             socials["emails"].append(i)
-
 
     # Pattern for Facebook links
     fb_match = fb_pattern.findall(s)
@@ -79,8 +84,9 @@ def scan_socials(s, socials):
     print(len(insta_handle_match))
     if len(insta_handle_match) > 0:
         for i in insta_handle_match:
-            print(i)
-            socials["insta_handle"].append('@'+i)
+            socials["insta_handle"].append('@' + i)
+
+
 with open("event_page_text_chicago.ndjson", "r") as jsonfile:
     text_data = json.load(jsonfile)
 with open("eventIDS_chicago.txt", "r") as IDFile:
@@ -108,7 +114,7 @@ with open("eventIDS_chicago.txt", "r") as IDFile:
             #filters json to relevant outputs
 
             eventInfo = {k: v for k, v in eventInfo.items() if k in importantKeys}
-            socials = {"fb_link": [], "insta_link": [], "insta_handle": [], "emails":[], "phone":[]}
+            socials = {"fb_link": [], "insta_link": [], "insta_handle": [], "emails":[], "phone":[], "tiktok":[]}
 
 
             scan_socials(eventInfo[line], socials) #this scrapes the page text, not the API text
